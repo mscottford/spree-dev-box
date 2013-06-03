@@ -96,7 +96,7 @@ rbenv::install { "vagrant":
   home => "${home}"
 }
 
-rbenv::compile { "2.0.0-p0":
+rbenv::compile { "2.0.0-p195":
   user => 'vagrant',
   home => "${home}",
   global => true
