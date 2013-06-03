@@ -65,10 +65,6 @@ class { 'install_postgres': }
 class { 'memcached': }
 
 
-# --- xvfb ---------------------------------------------------------------------
-
-class { 'xvfb': }
-
 # --- Packages -----------------------------------------------------------------
 
 package { 'curl':
@@ -90,16 +86,6 @@ package { ['libxml2', 'libxml2-dev', 'libxslt1-dev']:
 
 # ExecJS runtime.
 package { 'nodejs':
-  ensure => installed
-}
-
-# Spree dependencies
-package { 'imagemagick':
-  ensure => installed
-}
-
-# Selenium dependencies
-package { 'firefox':
   ensure => installed
 }
 
