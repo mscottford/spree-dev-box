@@ -101,3 +101,10 @@ rbenv::compile { "2.0.0-p195":
   home => "${home}",
   global => true
 }
+
+# --- Rails ---------------------------------------------------------------------
+
+package { 'rails':
+  ensure => 'installed',
+  provider => 'gem'
+}
